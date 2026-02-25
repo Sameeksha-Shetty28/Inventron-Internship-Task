@@ -1,20 +1,17 @@
-function showMessage() {
-    document.getElementById("output").innerText =
-        "✅ Button clicked! This is a working button.";
+function showAlert() {
+    alert("This is an alert button!");
 }
 
 function changeColor() {
-    document.body.style.background = "#e3f2fd";
-    document.getElementById("output").innerText =
-        "🎨 Background color changed!";
+    document.body.style.backgroundColor = "#d1e7dd";
 }
 
 function showDate() {
-    let today = new Date();
-    document.getElementById("output").innerText =
-        "📅 Today's Date: " + today.toDateString();
+    document.getElementById("output").innerHTML =
+        "Current Date & Time: " + new Date();
 }
 
 function resetPage() {
-    location.reload();
+    document.body.style.backgroundColor = "#f4f4f4";
+    document.getElementById("output").innerHTML = "";
 }

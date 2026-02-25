@@ -2,27 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Task 6 - Working Buttons</title>
+    <title>Task 6 - Buttons Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container">
+    <h1>Welcome</h1>
+    <h2>HTML Page with Different Buttons</h2>
 
-    <h1>Working Buttons Demo</h1>
-    <p>Click each button to see its action.</p>
-
-    <div class="button-group">
-        <button class="btn primary" onclick="showMessage()">Show Message</button>
-        <button class="btn success" onclick="changeColor()">Change Background</button>
-        <button class="btn warning" onclick="showDate()">Show Date</button>
-        <button class="btn danger" onclick="resetPage()">Reset</button>
+    <div class="button-container">
+        <button onclick="showAlert()">Alert Button</button>
+        <button onclick="changeColor()">Change Background</button>
+        <button onclick="showDate()">Show Date</button>
+        <button onclick="resetPage()">Reset</button>
     </div>
 
     <p id="output"></p>
 
-</div>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
