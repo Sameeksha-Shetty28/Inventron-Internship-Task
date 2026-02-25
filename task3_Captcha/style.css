@@ -1,0 +1,63 @@
+/* Reset default margin */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main Container */
+.container {
+    background: #ffffff;
+    padding: 30px;
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2e86de;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #1b4f72;
+}
+
+/* Hidden class */
+.hidden {
+    display: none;
+}
+
+/* Captcha Box */
+.captcha-box {
+    background-color: #e0e0e0;
+    padding: 8px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}

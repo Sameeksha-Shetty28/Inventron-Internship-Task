@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Form with Captcha</title>
+    
+    <!-- Linking External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Dynamic Form</h2>
+
+        <form id="dynamicForm">
+
+            <!-- Initial Input Fields -->
+            <input type="text" id="field1" placeholder="Enter First Value" required>
+            <input type="text" id="field2" placeholder="Enter Second Value" required>
+
+            <!-- Hidden Section (Captcha + Third Field) -->
+            <div id="extraSection" class="hidden">
+                <div class="captcha-box" id="captchaText"></div>
+                <input type="text" id="captchaInput" placeholder="Enter Captcha">
+                <input type="text" id="field3" placeholder="Enter Third Value">
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Linking External JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
