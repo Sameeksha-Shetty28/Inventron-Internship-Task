@@ -2,23 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Task 6 - JavaScript Functions</title>
+    <title>JavaScript Function Types</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Types of JavaScript Functions</h1>
+    <!-- HOME PAGE -->
+    <div id="home">
+        <h1>Types of JavaScript Functions</h1>
 
-    <div class="btn-container">
-        <button onclick="showContent('arrow')">Arrow Function</button>
-        <button onclick="showContent('param')">Parameter & Argument</button>
-        <button onclick="showContent('return')">Return Keyword</button>
-        <button onclick="showContent('anonymous')">Anonymous Function</button>
-        <button onclick="showContent('callback')">Callback Function</button>
+        <div class="btn-container">
+            <button onclick="openPage('arrow')">Arrow Function</button>
+            <button onclick="openPage('param')">Parameter & Argument</button>
+            <button onclick="openPage('return')">Return Keyword</button>
+            <button onclick="openPage('anonymous')">Anonymous Function</button>
+            <button onclick="openPage('callback')">Callback Function</button>
+        </div>
     </div>
 
-    <div id="content-box">
-        <p>Click any button to see details here 👆</p>
+    <!-- DETAILS PAGE -->
+    <div id="details" class="hidden">
+        <h1>Function Explanation</h1>
+        <p id="details-text"></p>
+        <button onclick="goBack()">Go Back</button>
     </div>
 
     <script src="script.js"></script>

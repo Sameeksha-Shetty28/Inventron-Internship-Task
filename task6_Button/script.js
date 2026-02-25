@@ -1,55 +1,91 @@
-function showContent(type) {
-    let content = "";
+function openPage(type) {
+    document.getElementById("home").classList.add("hidden");
+    document.getElementById("details").classList.remove("hidden");
+
+    let text = "";
 
     if (type === "arrow") {
-        content = `
-        <h3>Arrow Function</h3>
-        <p>Arrow functions are a shorter way to write functions in JavaScript.</p>
-        <pre>
+        text = `
+Arrow Function
+
+Syntax:
+const functionName = (parameters) => {
+    // code
+};
+
+Example:
 const add = (a, b) => a + b;
-        </pre>`;
+
+Arrow functions provide a shorter syntax and do not have their own 'this'.
+        `;
     }
 
     else if (type === "param") {
-        content = `
-        <h3>Parameter & Argument</h3>
-        <p>Parameters are variables listed in function definition.</p>
-        <p>Arguments are values passed to the function.</p>
-        <pre>
+        text = `
+Parameters & Arguments
+
+Syntax:
+function functionName(parameter) {
+    // code
+}
+
+Example:
 function greet(name) {
     console.log(name);
 }
 greet("Sam");
-        </pre>`;
+
+Parameters are variables in function definition.
+Arguments are values passed while calling the function.
+        `;
     }
 
     else if (type === "return") {
-        content = `
-        <h3>Return Keyword</h3>
-        <p>The return keyword sends a value back from the function.</p>
-        <pre>
+        text = `
+Return Keyword
+
+Syntax:
+function functionName() {
+    return value;
+}
+
+Example:
 function sum(a, b) {
     return a + b;
 }
-        </pre>`;
+
+The return keyword sends a result back to the caller.
+        `;
     }
 
     else if (type === "anonymous") {
-        content = `
-        <h3>Anonymous Function</h3>
-        <p>Anonymous functions do not have a name.</p>
-        <pre>
-let msg = function() {
+        text = `
+Anonymous Function
+
+Syntax:
+const variable = function() {
+    // code
+};
+
+Example:
+const message = function() {
     console.log("Hello");
 };
-        </pre>`;
+
+Anonymous functions do not have a name and are often used as callbacks.
+        `;
     }
 
     else if (type === "callback") {
-        content = `
-        <h3>Callback Function</h3>
-        <p>A callback function is passed as an argument to another function.</p>
-        <pre>
+        text = `
+Callback Function
+
+Syntax:
+function firstFunction(callback) {
+    callback();
+}
+
+Example:
 function display(result) {
     console.log(result);
 }
@@ -57,8 +93,15 @@ function display(result) {
 function calculate(a, b, callback) {
     callback(a + b);
 }
-        </pre>`;
+
+A callback function is passed as an argument to another function.
+        `;
     }
 
-    document.getElementById("content-box").innerHTML = content;
+    document.getElementById("details-text").innerText = text;
+}
+
+function goBack() {
+    document.getElementById("details").classList.add("hidden");
+    document.getElementById("home").classList.remove("hidden");
 }
