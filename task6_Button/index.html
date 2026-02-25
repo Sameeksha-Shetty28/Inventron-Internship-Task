@@ -2,22 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Task 6 - Buttons Page</title>
+    <title>Task 6 - JavaScript Functions</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Welcome</h1>
-    <h2>HTML Page with Different Buttons</h2>
+    <h1>Types of JavaScript Functions</h1>
 
-    <div class="button-container">
-        <button onclick="showAlert()">Alert Button</button>
-        <button onclick="changeColor()">Change Background</button>
-        <button onclick="showDate()">Show Date</button>
-        <button onclick="resetPage()">Reset</button>
+    <div class="btn-container">
+        <button onclick="showContent('arrow')">Arrow Function</button>
+        <button onclick="showContent('param')">Parameter & Argument</button>
+        <button onclick="showContent('return')">Return Keyword</button>
+        <button onclick="showContent('anonymous')">Anonymous Function</button>
+        <button onclick="showContent('callback')">Callback Function</button>
     </div>
 
-    <p id="output"></p>
+    <div id="content-box">
+        <p>Click any button to see details here 👆</p>
+    </div>
 
     <script src="script.js"></script>
 </body>
