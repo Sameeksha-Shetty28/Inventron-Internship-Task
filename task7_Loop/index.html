@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 7 - Functions with Loops</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HOME PAGE -->
+    <div id="home">
+        <h1>JavaScript Functions with Loops</h1>
+
+        <div class="btn-container">
+            <button onclick="openPage('for')">For Loop</button>
+            <button onclick="openPage('while')">While Loop</button>
+            <button onclick="openPage('dowhile')">Do While Loop</button>
+            <button onclick="openPage('forin')">For...in Loop</button>
+            <button onclick="openPage('forof')">For...of Loop</button>
+            <button onclick="openPage('break')">Break & Continue</button>
+            <button onclick="openPage('nested')">Nested Loop</button>
+        </div>
+    </div>
+
+    <!-- DETAILS PAGE -->
+    <div id="details" class="hidden">
+        <h1>Function Explanation</h1>
+        <pre id="details-text"></pre>
+        <button onclick="goBack()">Go Back</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
